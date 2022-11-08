@@ -158,8 +158,8 @@ class IdleClassAutocrat {
 				while(this.currOutgoing.message().length < 180) { 
 					this.currOutgoing.message(this.currOutgoing.message() + " " + this.randomBizWord());
 				}
-				setTimeout(this.autoSendMail, 2000);
-				setTimeout(this.autoStopWaitingForMail, 5000);
+				setTimeout(this.autoSendMail, 20);
+				setTimeout(this.autoStopWaitingForMail, 50);
 			}	
 		}
 		this.autoSendMail = function() {
